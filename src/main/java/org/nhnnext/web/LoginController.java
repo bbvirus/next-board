@@ -4,10 +4,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class HomeController {
+public class LoginController {
+	
+	@RequestMapping(value="/login")
+	public String login(String userId, String password) {
 		
-	@RequestMapping("/")
-	public String index() {
-		return "index";
+		return "redirect:/board/list";
 	}
+	
 }

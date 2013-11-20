@@ -1,0 +1,49 @@
+@CHARSET "UTF-8";
+
+/* System Name, CSS Version_Creater_Date */
+/* Common */ 
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textare a,button,select{margin:0;padding:0}
+body,input,textarea,select,button,table{font-family:'�뗭�',Dotum,AppleGothic,sans- serif;font-size:1em}
+img,fieldset{border:0}
+ul,ol{list-style:none}
+em,address{font-style:normal} a{text-decoration:none} a:hover,a:active,a:focus{text-decoration:underline}
+
+	div#wrap {
+		width : 600px;
+		margin-right : auto;
+		margin-left : auto; /* id가 wrap인 div영역을 가운데에 배치 */
+	}
+	
+	header > h1 {
+		font-family : Raleway, Helvatica Neue, Helvetica, Arial, sans-serif;
+		font-size : 2em;
+		font-weight : 100;
+		letter-spacing : 0.1em;
+		text-align : center; /* h1태그 내의 글자를 오른쪽으로 정렬 */
+		margin-top : 100px;
+	}
+	
+	div#formArea {
+		padding-left : 100px;
+		padding-top : 100px;
+	}
+	
+	#formArea textarea {
+		width : 400px;
+		margin : 20px 0px;
+		resize : none;
+	}
+	
+	#formArea input[type=text], textarea {
+		padding : 3px;
+	}
+	
+	#formArea input[type=submit] {
+		background : hotpink;
+		color : white;
+		font-size : 12px;
+		border-style : none;
+		border-radius : 5px;
+		margin-top : 10px;
+		padding : 5px;
+	}
