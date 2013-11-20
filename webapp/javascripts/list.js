@@ -53,7 +53,6 @@ function writeComments(e){
 		
 		if(request.readyState == 4 && request.status == 200){
 			var obj = JSON.parse(request.responseText);
-			console.log(obj);
 			var htmlSource =
 				"<div id='eachComment'>" + obj.contents +
 				"<form action = '/board/" + obj.id +
@@ -61,7 +60,6 @@ function writeComments(e){
 				"/delete' method='post'>" +
 				"<input type='submit' value='댓글삭제'>" +
 				"</form> <br /></div>";
-			console.log(e);
 			var commentArea = e.currentTarget.parentNode.parentNode.previousElementSibling;
 			
 			commentArea.insertAdjacentHTML('beforeend', htmlSource);

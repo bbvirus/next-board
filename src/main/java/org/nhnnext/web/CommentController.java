@@ -36,7 +36,6 @@ public class CommentController {
 	public @ResponseBody Comment createAndShow(@PathVariable Long id, String contents) {
 		Board board = boardRepository.findOne(id);
 		Comment comment = new Comment(contents, board);
-		System.out.println("djfksdjklfjslkdjflksdf");
 		return commentRepository.save(comment);
 	}
 	
